@@ -1,0 +1,37 @@
+#!/bin/bash
+
+TILING_MODE=$(cat ~/.config/.tiling)
+
+if [ $TILING_MODE == "Auto" ]; then
+    pkill autotiling
+    echo "Manual" > ~/.config/.tiling
+else
+    autotiling &
+    echo "Auto" > ~/.config/.tiling
+fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

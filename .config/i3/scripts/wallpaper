@@ -1,0 +1,4 @@
+#!/bin/bash
+
+THEME=$(cat ~/.config/.rice)
+nitrogen --random ~/.config/rice/$THEME/wall --set-zoom-fill &

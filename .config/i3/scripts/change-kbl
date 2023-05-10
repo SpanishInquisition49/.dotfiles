@@ -1,0 +1,12 @@
+#!/bin/bash
+
+rofi_command="rofi -dmenu -theme $HOME/.config/rofi/riceselector.rasi"
+
+options=("it" "gb")
+
+selected=$(printf "%s\n" "${options[@]}" | $rofi_command)
+
+if [[ -n "$selected" ]]; then
+    setxkbmap -layout $selected
+    notify-send "Keyboard layout: $selected"
+fi

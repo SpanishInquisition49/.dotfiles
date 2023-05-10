@@ -1,0 +1,15 @@
+#/bin/bash
+
+increment="+10%"
+
+if [[ $1 == "+" ]]; then
+    increment="+10%"
+else
+    increment="10%-"
+fi
+
+brightnessctl s $increment
+max=$(brightnessctl m)
+current=$(brightnessctl g)
+perc=$(( current*100/max ))
+notify-send "Brightness: $perc%"

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+TILING_MODE=$(cat ~/.config/.tiling)
+
+if [ $TILING_MODE == "Auto" ]; then
+    autotiling &
+fi
