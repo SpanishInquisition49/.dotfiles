@@ -2,7 +2,7 @@
 
 rofi_command="rofi -dmenu -theme $HOME/.config/rofi/riceselector.rasi"
 
-options=("gruvbox-dark" "sakura-night" "midnight-love")
+options=("gruvbox-dark" "sakura-night" "midnight-love" "pine-light")
 
 selected=$(printf "%s\n" "${options[@]}" | $rofi_command)
 

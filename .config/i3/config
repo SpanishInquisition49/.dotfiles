@@ -32,7 +32,7 @@ gaps inner 6
 gaps top 25
 
 # show window title bars (not officially supported with i3gaps)
-default_border pixel 0
+default_border pixel 2
 default_floating_border pixel 4
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -367,54 +367,30 @@ for_window [window_role="About"] floating enable
 # set border of floating window
 for_window [class="urxvt"] border pixel 4
 
+
 ######################################
 # color settings for bar and windows #
 ######################################
 
 # Define colors variables:
-set $darkbluetrans	#458588e6
-set $darkblue		#458588
-set $lightblue		#83a598
-set $urgentred		#cc241d
-set $white		    #ebdbb2
+set $darkbluetrans	#89b4fae6
+set $darkblue		#89b4fa
+set $lightblue		#74c7ec
+set $urgentred		#f38ba8
+set $white		    #cdd6f4
 set $black		    #000000
-set $purple		    #b16286
-set $darkgrey		#282828
-set $grey		    #a89984
-set $mediumgrey		#928374
-set $yellowbrown	#d79921
-set $green          #98971a
+set $purple		    #cba6f7
+set $darkgrey		#45475a
+set $grey		    #a6adc8
+set $mediumgrey		#6c7086
+set $yellowbrown	#fab387
+set $green          #a6e3a1
 
-# define colors for windows:
-#class		        	border		bground		text		indicator	child_border
-client.focused		    	$lightblue	$darkblue	$white		$mediumgrey	$mediumgrey
-client.unfocused	    	$darkblue	$darkblue	$grey		$darkgrey	$darkgrey
-client.focused_inactive		$darkblue	$darkblue	$grey		$black		$black
-client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
-
-############################################
-# bar settings (input comes from i3blocks) #
-############################################
-
-
-# Start i3bar to display a workspace bar
-# (plus the system information i3status finds out, if available)
-#bar {
-#    font pango: MonoLisa Nerd Font 8
-#        status_command i3blocks -c ~/.config/i3/i3blocks.conf
-#        position bottom
-#        tray_padding 0
-#        strip_workspace_numbers yes
-#        colors {
-#            separator          $purple
-#                background         $darkgrey
-#                statusline         $white
-#                focused_workspace	$mediumgrey	   	$grey		$darkgrey	$purple
-#                active_workspace	$lightblue      	$mediumgrey	$darkgrey	$purple
-#                inactive_workspace	$darkgrey   		$darkgrey	$grey		$purple
-#                urgent_workspace	$urgentred	    	$urgentred	$white		$purple
-#        }
-#}
+#class		        	    border	        bground		text		indicator	    child_border
+client.focused		    	$yellowbrown    $darkblue   $white	    $green	        $darkblue
+client.unfocused	    	$darkblue	    $darkblue	$grey		$green	        $darkgrey
+client.focused_inactive		$darkblue	    $darkblue	$grey		$green		    $black
+client.urgent		    	$urgentred	    $urgentred	$white		$green	        $yellowbrown
 
 
 #####################################

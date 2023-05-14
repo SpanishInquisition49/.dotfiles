@@ -1,4 +1,4 @@
 vsync = true
 unredir-if-possible = false
 corner-radius: 15
-round-borders = 1
+round-borders = 2
