@@ -79,7 +79,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # laboratorio Uni 
 alias alina="ssh g.scannagatti@laboratorio2.di.unipi.it -i /home/scanna/.ssh/laboratorio -X"
-alias lab="alina"
+alias r="ranger"
 alias nv="nvim"
 alias ls="exa --icons"
 export PATH="$PATH:/home/scanna/.local/bin"
